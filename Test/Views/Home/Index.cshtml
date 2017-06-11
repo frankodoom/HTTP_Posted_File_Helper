@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>HTTP POSTED FILE HELPER  [TEST ENVIRONMENT]</h1>
+    <p class="lead">A Light- Weight Library for Posting Files to IIS Web Server.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <form action="/Home/UploadFiles" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <input type="file" id="file" name="files" />
+        <input type="file" id="file" name="files"/>
+        <input type="file" id="file"  name="files"/>
+        <input type="file" id="file" name="files"/>
+        <br />
+        <input type="submit" value="Post Files" />
+    </form>
+</div>

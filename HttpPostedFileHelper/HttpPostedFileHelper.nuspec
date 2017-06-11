@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>HttpPostedFileHelper</id>
+    <version>1.2.0</version>
+    <authors>Frank Arkhurst Odoom</authors>
+    <owners>Frank Arkhurst Odoom</owners>
+    <projectUrl>https://github.com/frankodoom/HTTP_Posted_File_Helper</projectUrl>
+    <iconUrl>https://github.com/frankodoom/HTTP_Posted_File_Helper/blob/master/HttpPostedFileHelper/Resource/projectLogo.png?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A light-weight ASP.Net MVC Library for writing posted files to server</description>
+    <releaseNotes>
+         Rewritten FileHelper
+         Post Files to Azure Storage
+         Implemented Garbage Collection for good memory management
+    </releaseNotes>
+    <copyright>© Copyright 2017 Frank Arkhurst Odoom</copyright>
+    <tags>File PostedFile HTTP HttpPostedFile Post MVC </tags>
+    <!-- Dependencies are automatically installed when the package is installed -->
+    <dependencies>
+      <dependency id="WindowsAzure.Storage" version="8.1.1" />
+      <dependency id="Microsoft.WindowsAzure.ConfigurationManager" version="3.2.3" />
+    </dependencies>
+  </metadata>
+  <!-- A readme.txt will be displayed when the package is installed -->
+  <files>
+    <file src="readme.txt" target="" />
+  </files>
+</package>
