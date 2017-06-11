@@ -24,14 +24,14 @@ This Revision (V.1.2.0)
 
    * The Old Implementation (Basic Usage)
 
-  <code>[HttpPost]
+        '[HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult UploadFiles(Enumerable<HttpPostedFileBase> files)
 	{
 	Filehelper filehelper = new Filehelper();
         filehelper.ProcessFile(files,"MyPath");
-	}
-</coode>
+	}'
+
 
   * The New Implementation (Wraps in a using statement)
 
