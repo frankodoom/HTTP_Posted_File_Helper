@@ -13,7 +13,7 @@ namespace Test.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+       // [ValidateAntiForgeryToken]
         public ActionResult UploadFiles(IEnumerable<HttpPostedFileBase> files)
         {
 
@@ -35,7 +35,6 @@ namespace Test.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }

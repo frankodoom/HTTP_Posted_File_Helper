@@ -9,24 +9,37 @@
 </div>
 
 <div class="row">
-    @using (Ajax.BeginForm("Home", "UploadFiles", new AjaxOptions() { HttpMethod = "Post" }, new { enctype = "multipart/form-data" }))
+    @*@using (Ajax.BeginForm("Home", "UploadFiles", new AjaxOptions() { HttpMethod = "Post" }, new { enctype = "multipart/form-data" }))
     {
-        @Html.AntiForgeryToken()
-        <input type="file" id="file" name="files" />
-        <input type="file" id="file" name="files" />
-        <input type="file" id="file" name="files" />
-        <input type="file" id="file" name="files" />
-        <br />
-        <input type="submit" value="Post Files" />
-    }
+    }*@
 
+ <form>
+    @*@Html.AntiForgeryToken()*@
+    <input type="file" id="file" name="files" />
+    <input type="file" id="file" name="files" />
+    <input type="file" id="file" name="files" />
+    <input type="file" id="file" name="files" />
 
-    <div id="progressBar">
+     @*<div id="dropArea" style="width:300px; height:300px; border-style:dashed; border-color:orange;" >
+ 
+     </div>*@
 
+    <br />
+    <input type="submit" value="Post Files" />
+    <br />
+    <br />
+
+    <div class="progress col-md-3" >
+        <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+            0%
+        </div>
     </div>
-
-
-    @*<form action="/Home/UploadFiles" method="post" enctype="multipart/form-data">*@
        
-    @*</form>*@
+    </form>
 </div>
+
+
+@section scripts{
+    
+<script src="~/Scripts/httpPostedFileHelper.js"></script>   
+    }
