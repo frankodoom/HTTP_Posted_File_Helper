@@ -1,9 +1,7 @@
-﻿using System;
+﻿using HttpPostedFileHelper;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Threading.Tasks;
 
 namespace Test.Controllers
 {
@@ -18,7 +16,11 @@ namespace Test.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult UploadFiles(IEnumerable<HttpPostedFileBase> files)
         {
-            
+
+            AzureStorageWriter az = new AzureStorageWriter();
+            az.ConnectionKey = "Emulator";
+            az.Container = "cloud991";
+            az.WriteToAzure(files);
             
             return View("Index");
         }

@@ -117,3 +117,4 @@ C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\HttpPostedFileHelper\T
 C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\HttpPostedFileHelper\Test\bin\ru\System.Spatial.resources.dll
 C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\HttpPostedFileHelper\Test\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\HttpPostedFileHelper\Test\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\HttpPostedFileHelper\Test\bin\HttpPostedFileHelper.pdb

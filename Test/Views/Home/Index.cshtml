@@ -9,13 +9,24 @@
 </div>
 
 <div class="row">
-    <form action="/Home/UploadFiles" method="post" enctype="multipart/form-data">
+    @using (Ajax.BeginForm("Home", "UploadFiles", new AjaxOptions() { HttpMethod = "Post" }, new { enctype = "multipart/form-data" }))
+    {
         @Html.AntiForgeryToken()
         <input type="file" id="file" name="files" />
-        <input type="file" id="file" name="files"/>
-        <input type="file" id="file"  name="files"/>
-        <input type="file" id="file" name="files"/>
+        <input type="file" id="file" name="files" />
+        <input type="file" id="file" name="files" />
+        <input type="file" id="file" name="files" />
         <br />
         <input type="submit" value="Post Files" />
-    </form>
+    }
+
+
+    <div id="progressBar">
+
+    </div>
+
+
+    @*<form action="/Home/UploadFiles" method="post" enctype="multipart/form-data">*@
+       
+    @*</form>*@
 </div>
