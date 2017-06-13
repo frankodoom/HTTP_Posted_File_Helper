@@ -66,5 +66,25 @@ You can specify the file types to be rejected during an upload by supplying a st
               }   
              return View("Home");
           }
+          
+   
+ Uploading Large Files </br>
+ If you want to upload large files, by default IIS is set to upload files up to 4mb however, you can modify your web.config to allow
+ upload of your choice.
+      
+  maxAllowedContentLength
+       
+             <httpRuntime targetFramework="4.5.2" executionTimeout="240000"  maxRequestLength="2048000"  />
+             
+   maxAllowedContentLength        
+          
+           <system.webServer>
+             <security>
+                   <requestFiltering>
+                      <requestLimits maxAllowedContentLength="2147483648" />
+                   </requestFiltering>
+                </security>
+             </system.webServer>
+    
 
  
