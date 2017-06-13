@@ -3,7 +3,8 @@ HTTP Posted File Helper V.1.0.1
 This is a light weight library that helps in the posting of files to IIS Webserver by providing a helper class FileHElper.cs which contains overloaded methods ProcessFile() which reduces the boilerplate in posting files.
 
 Installing..
-PM> Install-Package HttpPostedFileHelper
+
+    PM> Install-Package HttpPostedFileHelper
 
 Usage
 
@@ -19,7 +20,7 @@ Processing Single Files (Basic Usage)
        FileHelper filehelper = new FileHelper();
        filehelper.ProcessFile(file, "{path to Existing or New Directory}");
        return view();
-       }
+      }
 Processing Multiple Files
 This makes provision for multiple files being uploaded to the server with an overridden method for Processing an IEnumerable of files (HttpPostedFileBase Collection)
 
