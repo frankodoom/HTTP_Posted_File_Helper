@@ -12,8 +12,7 @@ Usage
   using HttpPostedFileHelper;
 Processing Single Files (Basic Usage)
 
-    ```
-    c#
+    ```c#
      [HttpPost]  
      [ValidateAntiForgeryToken] 
       public ActionResult UploadFile(HttpPostedFileBase file)
