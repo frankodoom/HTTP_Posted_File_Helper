@@ -1,3 +1,6 @@
+
+[![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/HttpPostedFileHelper/)
+
 HTTP Posted File Helper V.1.0.2
 
 This is a light weight library that helps in the posting of files to IIS Webserver by providing a helper class FileHElper.cs which contains overloaded methods ProcessFile() which reduces the boilerplate in posting files.
